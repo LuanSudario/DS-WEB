@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 2 - Formulário de Pesquisa de
+            Preferências</title>
+    </head>
+    <body>
+        <!--Título-->
+        <h1 align="center"><b>Exercício 2 - Formulário de Pesquisa de Preferências</b></h1>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Qual é o seu gênero?</h3>
+        <form action="Pasta de atividades do Bruno.php" method="get">
+            <!--Masculino Feminino e outro usando Radio-->
+
+
+
+
+            <!--Masculino-->
+            <input type="radio" id="Masculino" name="genero" value="1">
+            <label for="Masculino">Masculino</label>
+            <!--Feminino-->
+            <input type="radio" id="Feminino" name="genero" value="2">
+            <label for="Feminino">Feminino</label>
+            <!--Outro-->
+            <input type="radio" id="Outro" name="genero" value="3">
+            <label for="Outro">Outro</label>
+
+
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h3>Quais são os seus interesses?</h3>
+            <!--Interesses de hobbies-->
+            <form action="Pasta de atividades do Bruno.php" method="get">
+                <!--tecnologia-->
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+                <!--Esporte-->
+                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                <label for="esportes">Esportes</label>
+                <!--Arte-->
+                <input type="checkbox" id="arte" name="interesses" value="arte">
+                <label for="arte">Arte</label>
+                <!--Música-->
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Música</label>
+
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <h3>Escolha seu carro favorito</h3>
+                <!--Carro favorito-->
+                <label for="carros">Escolha um carro:</label>
+                <select id="carros" name="carros">
+                    <!--Carros Sedans-->
+                <optgroup label="Sedans">
+                <option value="corolla">Toyota Corolla</option>
+                <option value="civic">Honda Civic</option>
+                </optgroup>
+                    <!--Carros SUVs-->
+                <optgroup label="SUVs">
+                <option value="crv">Honda CR-V</option>
+                <option value="rav4">Toyota RAV4</option>
+                </optgroup>
+                </select>
+                <br>
+                <br>
+                <!--Botão-->
+                    <input type="submit" name="Enviar" value="Enviar">
+
+                
+
+
+            </form>
+
+
+
+
+
+        </form>
+    </body>
+</html>
