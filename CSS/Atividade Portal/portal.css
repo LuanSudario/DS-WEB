@@ -1,0 +1,137 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #F5F5F5;
+}
+    
+.cabeca {
+    
+    text-align: center;
+    background-color: #F52B16;
+    margin-bottom: 5rem;
+    
+}
+
+.cabeca h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
+.subtitulo {
+    font-family: 'Playfair Display', serif;
+    opacity: 0.7;
+}
+
+.noticia1{
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; 
+}
+
+.texto1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'PT Serif', serif;
+    line-height: 1.5em;
+    text-align: left;
+    padding-left: 10rem;
+    width: 75em;
+}
+.senhorsenais{
+    border-radius: 1.5em;
+    border: 0.1em solid #F52B16;
+}
+
+    .senhorsenais:hover {
+        border: 0em;
+        
+    }
+
+    hr{
+        margin-top: 10rem;
+        border: solid gray;
+    }
+
+
+
+    .noticia2 {
+        padding-top: 10rem;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
+    .senhores {
+        height: 20em;
+        width: 60em;
+        border-radius: 1.5em;
+        border: 0.1em solid #F52B16;
+        
+    }
+
+    .senhores:hover {
+        border: 0em;
+        
+    }
+
+
+   
+   
+
+    .rodape {
+        background-color: #F52B16;
+        height: 3em;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    color: red;
+
+}
+
+a:hover{
+    color: blue;
+}
+
+
+.data {
+    opacity: 0.6;
+}
+
+
+
+
+
+

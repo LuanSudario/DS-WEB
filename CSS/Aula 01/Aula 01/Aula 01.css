@@ -1,0 +1,38 @@
+
+        /* comentario em CSS */
+        /*seletores de CSS */
+        @font-face {
+            font-family:Wingdings ;
+            src: url(wingding.ttf);
+         }
+        h1{color:blueviolet,;
+             font-family: Wingdings;
+             font-size: xx-large;
+             padding-top: 500px;
+           
+        }
+        div{ background: linear-gradient(to right, purple, pink, salmon); 
+        
+            
+        }
+        div:hover{ 
+            background-image: url('dante.jpg') ;
+            background-size: cover;
+            background-position: center;
+            height: 2000px;
+
+        }
+        
+        .roberto { background-image:url('dante.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 2000px;
+        cursor: not-allowed;
+        }
+
+        
+
+        body{background:radial-gradient(circle, black, white, gray);
+        cursor:url('NOVO\ -\ Grimm_boss_cursor.cur'),auto;}
