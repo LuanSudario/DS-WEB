@@ -83,7 +83,10 @@ h2 {
         
     }
 
-
+    table, td, th{
+        border: #F52B16 solid 0.1em;
+        border-collapse: collapse;
+    }
    
    
 
