@@ -82,12 +82,35 @@ h2 {
         border: 0em;
         
     }
-
-    table, td, th{
-        border: #F52B16 solid 0.1em;
-        border-collapse: separate;
-        padding: 0.5em;
+table{
+        border-collapse: collapse;
         border-radius: 0.5em;
+        overflow: hidden;
+        
+        
+
+    }
+
+    td, th{
+        padding: 1em;
+    }
+    th{font-family: 'Playfair Display', serif;
+    font-size: 1.5em;}
+    td{font-family: 'PT Serif', serif;
+    font-size: 1.2em;}
+
+    tr:nth-child(odd) {
+        background-color: #EB776D;
+    }
+    tr:nth-child(even){
+        background-color: #CDDEEB ;
+    }
+
+    tr {
+        opacity: 0.8;
+    }
+    tr:hover{
+        opacity: 1;
     }
 
     
