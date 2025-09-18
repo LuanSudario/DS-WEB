@@ -1,0 +1,25 @@
+.cart1, .cart2, .cart3{
+    width: 200px;
+    height: 250px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.cart1{
+    background-color: lightcoral;
+    border: solid 5px red;
+}
+.cart2{
+    background-color: lightblue;
+    border: solid 5px blue;
+}
+.cart3{
+    background-color: lightgreen;
+    border: 5px solid green;
+}
+
+.pai{
+    margin: 0 auto;
+    text-align: center;
+}

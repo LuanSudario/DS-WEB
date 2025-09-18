@@ -1,0 +1,15 @@
+.div1, .div2{
+    padding: 15px;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+.div1{
+    background-color: lightcoral;
+    border: red solid 5px;
+}
+.div2{
+    background-color: lightblue;
+    border: blue solid 5px;
+}
