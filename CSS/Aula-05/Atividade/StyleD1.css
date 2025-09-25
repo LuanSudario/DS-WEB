@@ -1,0 +1,52 @@
+body{margin: 0;}
+
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: inline;
+    margin-top:0;
+    
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+.lateral{
+    
+    margin-top: 80px;
+    width: 250px;
+    height: 300px;
+    background-color: gainsboro;
+    
+    margin-right: 300px;
+    
+
+
+    position: sticky;
+    top: 60px;
+    left: 0;
+    
+}
+
+.Lorem{
+    
+    width: 600px;
+    margin: 0;
+    background-color: antiquewhite;
+    margin-left: 300px;
+}
+
+.pai{
+    min-height: 2000px;
+    margin-top: 60px;
+    text-align: left;
+   
+}
+
