@@ -1,0 +1,13 @@
+body{margin: 0;}
+.banner{
+    width: 100%;
+    height: 150px;
+    background-color: lightcoral;
+}
+.titulo{
+    width: 400px;
+    height: 80px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}

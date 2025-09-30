@@ -1,0 +1,53 @@
+.pai{
+    height: fit-content;
+}
+.secreto{
+    margin-top: 5000px;
+}
+
+
+
+.l{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 200px;
+    background-color: lightcoral;
+
+    position: sticky;
+    top: 0;
+}
+.u{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 500px;
+    margin-left: 50px;
+    background-color: lightblue;
+
+    position: sticky;
+    top: 0;
+
+}
+.a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 700px;
+    background-color: lightgreen;
+    margin-left: 100px;
+
+    position: sticky;
+    top: 0;
+}
+.n{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 2000px;
+    background-color: lightyellow;
+    margin-left: 150px;
+
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,28 @@
+.menu{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.item1, .item2, .item3, .item4{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+}
+.item1 {
+    background-color: lightcoral;
+    border: solid 5px red;
+}
+.item2{
+    background-color: lightblue;
+    border: solid 5px blue;
+}
+.item3{
+    background-color: lightgreen;
+    border: solid 5px green;
+}
+.item4{
+    background-color: lightyellow;
+    border: solid 5px yellow;
+}
