@@ -1,0 +1,225 @@
+/* Index */
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+header{
+    background-color: darkred;
+    text-align: center;
+    width: 100%;
+
+    position: fixed;
+    top: 0px;
+    z-index: 10000000;
+}
+
+a{
+    color: white;
+}
+.links{
+    display: inline-block;
+    
+    padding: 0 6em;
+    border-left: 0.1em white solid;
+    border-right: 0.1em white solid;
+    font-family: fantasy;
+   
+    text-decoration: none;
+}
+
+a:hover{
+    color: darkblue;
+}
+
+
+h1{
+    color: white;
+    border-bottom: 0.05em white solid;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.banner{
+    background-image: url('banner1filter.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 2rem;
+    height: 50rem;
+}
+
+.novas{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    color: black;
+    text-align: center;
+    
+}
+.boas{
+    text-align: center;
+    font-family: fantasy;
+}
+
+
+
+/* Cardapio */
+
+h2 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin: 1em;
+}
+
+.prato{
+    text-align: center;
+    border-bottom: 0.5em gray solid;
+    border-radius: 1.5em
+}
+.pratoimg{
+    background-image: url('prato1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+
+.pratotxt{
+    display: inline-block;
+    width: 30%;
+}
+.pratoimg2{
+    background-image: url('prato2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+.pratoimg3{
+    background-image: url('prato3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+.pratoimg4{
+    background-image: url('prato4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+.pratoimg5{
+    background-image: url('prato5.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+.pratoimg6{
+    background-image: url('prato6.jpg');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 30%;
+    height: 15em;
+}
+
+/* Promoções */
+.headzin{
+    margin-top: 3em;
+    color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    text-align: left;
+    a {
+        color: darkred;
+    }
+}
+table{
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    
+    
+
+}
+
+td, th{
+    padding: 1em;
+}
+th{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 1.5em;}
+td{font-family: 'PT Serif', serif;
+font-size: 1.2em;}
+
+tr:nth-child(odd) {
+    background-color: #EB776D;
+}
+tr:nth-child(even){
+    background-color: lightgray ;
+}
+
+tr {
+    opacity: 0.8;
+}
+tr:hover{
+    opacity: 1;
+}
+
+/*Reserva*/
+.formsi{
+    text-align: center;
+    background-color: aliceblue;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 2em;
+}
+
+input{
+    color: lightcoral;
+    border: 0.01em darkred solid;
+}
+textarea{
+    border-color: darkred;
+}
+input{
+    padding: 1em;
+    margin: 1em;
+}
+.botao{
+    height: 5em;
+    width: 30em;
+    background-color: darkred;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: darkred;
+    border-radius: 0.5em;
+}
+
+.botao:hover{
+    background-color: green;
+    border-color: green;
+    cursor: pointer;
+}
+.corpo{
+    background-image: url('banner1filter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rodape {
+    background-color: darkred;
+    height: 3em;
+    width: 100%;
+    text-align: left;
+}
