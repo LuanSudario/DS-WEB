@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="area" id="area">
+        <p class="mensagem" id="mensagem"></p>
+        <p class="coordenadas" id="coordenadas"></p>
+    </div>
+    <p id="resultado" style="font-size: 22px; font-weight:bold;"></p>
+    <fieldset>
+        <form id="meuFormulario">
+            <h4>Formulário de Cadastro</h3>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" id="email">
+                <br>
+                <label for="curso">Selecione o curso: </label>  
+                <select name="curso" id="curso">
+                    <option value="DS">Desenvolvimento de Sistemas</option>
+                    <option value="Mult">Multimidia</option>
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+    <p id="resultado" style="font-size: 22px; font-weight: bold;"></p>
+    <div class="espacamento"></div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.bloco {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid black;
+    transition: background 0.3s;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
