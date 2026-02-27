@@ -2,7 +2,10 @@ body {
     margin: 0;
     text-align: center;
 }
-
+.texto{
+    width: full auto 0;
+    text-align: center;
+}
 .bloco {
     width: 100px;
     height: 100px;
