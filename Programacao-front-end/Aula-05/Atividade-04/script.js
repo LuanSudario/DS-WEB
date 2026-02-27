@@ -141,6 +141,9 @@ function swicht2(){
     cor1();
     cor5();
     cor4();
+    if (verificarVitoria()){
+    tocarCorneta();
+}
 
 }
 function swicht3(){
