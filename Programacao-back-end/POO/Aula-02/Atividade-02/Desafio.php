@@ -1,7 +1,7 @@
 <?php
 abstract class Produto{
     public $nome = "pedro";
-    public $preco = 12;
+    public $preco = 0;
     public $estoque = 3;
 
     abstract function calcularDesconto();
@@ -9,8 +9,8 @@ abstract class Produto{
 
 class Eletronico extends Produto{
     function calcularDesconto(){
-    $newpreco = $this->$preco-($this->preco * 0.2);
-    if ($this->$estoque < 5){
+    $newpreco = $this->preco-($this->preco * 0.2);
+    if ($this->estoque < 5){
         $newpreco = $newpreco + ($this->preco * 0.1);
         echo "preço de desconte de ". $newpreco. "<br>"."<br>";
     }
@@ -22,8 +22,8 @@ class Eletronico extends Produto{
 
     class Roupa extends Produto{
     function calcularDesconto(){
-    $newpreco = $this->$preco-($this->preco * 0.2);
-    if ($this->$estoque < 5){
+    $newpreco = $this->preco-($this->preco * 0.2);
+    if ($this->estoque < 5){
         $newpreco = $newpreco + ($this->preco * 0.1);
         echo "preço de desconte de ". $newpreco. "<br>"."<br>";
     }
