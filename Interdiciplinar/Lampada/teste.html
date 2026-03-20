@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>IHM Arduino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Controle Arduino</h1>
+  <button onclick="ligar()">Ligar</button>
+  <button onclick="desligar()">Desligar</button>
+
+  <p id="status"></p>
+
+  <script>
+    function ligar() {
+      fetch("ligar.php")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("status").innerText = data;
+        })
+        .catch(error => console.error("Erro:", error));
+    }
+
+    function desligar() {
+      fetch("desligar.php")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("status").innerText = data;
+        })
+        .catch(error => console.error("Erro:", error));
+    }
+  </script>
+</body>
+</html>

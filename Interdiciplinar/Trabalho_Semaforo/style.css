@@ -1,0 +1,52 @@
+.caixa{
+    background-color: black;
+    height: 500px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+.pare{
+    height: 130px;
+    width: 130px;
+    background-color: lightgrey;
+    border-radius: 100%;
+    border: 5px solid gray;
+    margin-left: 29px;
+}
+.espere{
+    height: 130px;
+    width: 130px;
+    background-color: lightgrey;
+    border-radius: 100%;
+    border: 5px solid gray;
+    margin-left: 29px;
+    margin-top: 30px;
+}
+.vai{
+    height: 130px;
+    width: 130px;
+    background-color: lightgrey;
+    border-radius: 100%;
+    border: 5px solid gray;
+    margin-left: 29px;
+    margin-top: 30px;
+}
+
+.verde{
+    background-color: green;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.7);
+}
+.amarelo{
+    background-color: yellow;
+    box-shadow: 0 0 20px 5px rgba(255, 204, 0, 0.7);
+}
+.vermelho{
+    background-color: red;
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.7);
+}
+.cinza{
+    background-color: lightgrey;
+}

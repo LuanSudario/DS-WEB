@@ -1,0 +1,14 @@
+.lampada{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.acesso{
+    background-color: yellow;
+    box-shadow: 0 0 20px 5px rgba(255, 204, 0, 0.7);
+}
+
+.desligado{
+    background-color: lightgray;
+}
