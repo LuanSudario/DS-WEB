@@ -1,16 +1,15 @@
-
 var divResposta = document.getElementById("resposta")
 
 // os inputs var inputNome   = document.getElementById("nome")
 
 document.addEventListener('DOMContentLoaded', () => {
-    getProdutos();
+    getPlano();
     carregarCategorias();
 });
-document.getElementById('botaoEnviar').addEventListener('click', postProduto)
+document.getElementById('botaoEnviar').addEventListener('click', postPlano)
 
 async function carregarCategorias() {
-    const resposta = await fetch("http://localhost/cafeteria-api/categorias");
+    const resposta = await fetch("http://localhost/meus-planos-api/categorias");
     const json = await resposta.json();
 
     const select = document.getElementById("categoria_id");
@@ -26,8 +25,8 @@ async function carregarCategorias() {
         select.appendChild(option);
     });
 }
-async function getProdutos() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos")
+async function getPlano() {
+    var requisicao = await fetch("http://localhost/meus-planos-api/itens")
     var resposta = await requisicao.json()
 
     console.log(resposta)
@@ -35,12 +34,13 @@ async function getProdutos() {
     // Gera as linhas automaticamente para todos os itens do array
     const linhas = resposta.data.map(item => `
         <tr>
-            <td>${item.id}</td>
-            <td>${item.nome}</td>
-            <td>${item.preco}</td>
-            <td>${item.categoria_id}</td>
-            <td>${item.disponivel}</td>
-            <td><button onclick="deleteProduto(${item.id})">Deletar</button></td>
+            <td>
+                <input type="checkbox" class="check-feito" ${item.feito == 1 ? "checked" : ""}
+                onclick="toggleFeito(${item.id}, this.checked)">
+            </td>
+            <td class="risco">${item.nome}</td>
+            <td>${item.categoria_nome}</td>
+            <td><button onclick="deletePlano(${item.id})">Deletar</button></td>
         </tr>
     `).join("");
     
@@ -49,14 +49,12 @@ async function getProdutos() {
         <table class="sua-classe">
             <thead>
                 <tr>
-                    <th colspan="6" ><center>Produtos Cadastrados</center></th>
+                    <th colspan="6" ><center>Planos Planejados</center></th>
                 </tr>
                 <tr>
-                    <th>ID</th>
+                    <th>Feito</th>
                     <th>Nome</th>
-                    <th>Preco</th>
                     <th>Categoria</th>
-                    <th>Disponivel</th>
                     <th>Opções</th>
                 </tr>
             </thead>
@@ -67,18 +65,20 @@ async function getProdutos() {
     `;
 }
 
-async function postProduto() {
+async function postPlano() {
     var inputNome = document.getElementById("nome")
-    var inputPreco = document.getElementById("preco")
     var inputcategoria_id = document.getElementById("categoria_id")
-    var inputDisponivel = document.getElementById("disponivel")
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos", {
-        method:  "POST",
+    var inputfeito = document.getElementById("feito")
+    var requisicao = await fetch("http://localhost/meus-planos-api/itens", {
+    headers:
+    {
+    "Content-Type": "application/json"
+    },
+    method:  "POST",
         body:JSON.stringify({
             nome: inputNome.value,
-            preco: inputPreco.value,
             categoria_id: inputcategoria_id.value,
-            disponivel: inputDisponivel.value
+            feito: inputfeito.checked
              })
     })
 
@@ -87,21 +87,34 @@ async function postProduto() {
     
     //Limpa o campo
     inputNome.value = ""
-    inputPreco.value = ""
     inputcategoria_id.value = ""
-    inputDisponivel.value = ""
 
-    getProdutos()
+    getPlano()
 }
 
 
-async function deleteProduto(id) {
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos/" + id, {
+async function deletePlano(id) {
+    var requisicao = await fetch("http://localhost/meus-planos-api/itens/" + id, {
         method: "DELETE"
     })
  
     var resposta = await requisicao.json()
     console.log(resposta)
  
-    getProdutos()
+    getPlano()
+}
+
+
+async function toggleFeito(id, checked){
+    const feito = checked ? 1 : 0;
+    await fetch("http://localhost/meus-planos-api/itens/" + id, {
+    method: "PUT",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        feito: feito
+    })
+});
+getPlano()
 }

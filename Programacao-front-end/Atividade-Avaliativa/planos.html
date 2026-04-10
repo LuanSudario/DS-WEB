@@ -9,22 +9,18 @@
 <body>
     <ul>
         <li><a href="index.html">Início</a></li>
-        <li><a href="pedidos.html">Pedidos</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="categorias.html">Categorias</a></li>
-        <li><a href="#about"></a></li>
+        <li><a href="categorias.html">categorias</a></li>
+        <li><a href="planos.html">Planos</a></li>
     </ul>
-    
+
     <div class="formulario">
-        <h3>Cadastro de Produtos</h3>
-        <label for="nome">Nome do Produto</label>
+        <h3>Planejamento de Planos</h3>
+        <label for="nome">Nome do Plano</label>
         <input type="text" id="nome" name="nome">
-        <label for="nome">Preço do Produto</label>
-        <input type="text" id="preco" name="preco">
         <label for="nome">categoria</label>
         <select id="categoria_id"></select>
-        <label for="nome">Disponivel</label>
-        <input type="text" id="disponivel" name="disponivel">
+        <label for="nome">Feito:</label>
+        <input type="checkbox" id="feito" name="feito" onclick="toggleFeito(ID, this.checked)"><br>
         <button type="button" id="botaoEnviar" class="button button-enviar">Cadastrar</button>
     </div>
 
@@ -34,5 +30,5 @@
         
     </div>
 </body>
-<script src="./assets/js/produtos.js"></script>
+<script src="./assets/js/itens.js"></script>
 </html>

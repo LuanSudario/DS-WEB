@@ -15,8 +15,20 @@
         <li><a href="#about"></a></li>
     </ul>
 
-    <h1>Sistema de Gerenciamento de Cafeteria</h1>
+    <div class="formulario">
+        <h3>Cadastro de Pedido</h3>
+        <label for="nome">Nome do Cliente: </label>
+        <input type="text" id="cliente" name="nome">
+        <label for="nome">Total: </label>
+        <input type="number" id="total" name="nome">
+        <button type="button" id="botaoEnviar" class="button button-enviar" onclick="postPedido()">Cadastrar</button>
+    </div>
 
+    
+
+    <div id="resposta" class="tabela">
+        
+    </div>
 </body>
-<script src="./assets/js/categorias.js"></script>
+<script src="./assets/js/pedidos.js"></script>
 </html>

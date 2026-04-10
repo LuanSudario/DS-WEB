@@ -5,7 +5,7 @@ var inputNome   = document.getElementById("nome")
 
 
 async function getCategorias() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/categorias")
+    var requisicao = await fetch("http://localhost/meus-planos-api/categorias")
     var resposta = await requisicao.json()
 
     console.log(resposta)
@@ -43,7 +43,7 @@ getCategorias();
 
 
 async function postCategoria() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/categorias", {
+    var requisicao = await fetch("http://localhost/meus-planos-api/categorias", {
         method:  "POST",
         body:    JSON.stringify({ nome: inputNome.value })
     })
@@ -59,7 +59,7 @@ async function postCategoria() {
 
 
 async function deleteCategoria(id) {
-    var requisicao = await fetch("http://localhost/cafeteria-api/categorias/" + id, {
+    var requisicao = await fetch("http://localhost/meus-planos-api/categorias/" + id, {
         method: "DELETE"
     })
  
